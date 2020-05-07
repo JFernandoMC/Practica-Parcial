@@ -1,0 +1,193 @@
+* {
+	font-family: arial;
+	margin: 0;
+	padding: 0;
+}
+
+h2, h1, p { margin: 0; padding: 0 }
+
+header, section, footer {
+	overflow: hidden;
+	width: 100%;
+}
+
+h2 {
+	padding: 0 0 0 1em;
+}
+header nav, section article, footer .piePage {
+	margin: 0 auto;
+	overflow: hidden;
+	width: 80%;
+}
+
+header nav .logo {
+	width: 50px;
+}
+
+header nav .logo, h2 {
+	display: inline-block;
+}
+
+section article .contenedor1 .infoLab, .formLab {
+	display: inline-block;
+	margin: 0 -4px;
+	width: 50%;
+}
+
+section article .contenedor1 .infoLab h1 {
+	padding: 0 0 .3em 0
+}
+section article .contenedor1 .infoLab .txtInfoLab {
+	font-size: 20px;
+	line-height: 18px;
+	margin: 0 0 0 5px;
+	padding: 0 0 2em 0;
+}
+html{
+	position: relative;
+}
+
+header nav {
+	align-items: center;
+	display: flex;
+	padding: 1em 0
+}
+
+section article .contenedor1 .infoLab .banner {
+	width: 300px;
+}
+
+section article .contenedor1 .formLab .camposTxt {
+	margin: 1em 0;
+	display: block;
+}
+
+section article .contenedor2 .bloques {
+	display: flex;
+	align-items: top;
+	z-index: 1;
+	position: absolute;
+	padding: 0 0 4em 0;
+}
+
+
+section article .contenedor2 .bloques2 {
+	display: flex;
+	align-items: top;
+	padding: 0 0 4em 0;
+}
+
+.bloque1, .bloque2, .bloque3, .bloque4 {
+	background-color: #f2f2f2;
+	border-radius: 12px;
+	display: inline-block;
+	margin: 0 25px 0 0;
+	overflow: hidden;
+	width: 23%;
+}
+
+.bloque4 {
+	margin: 0;
+}
+
+header {
+	background-color: #f2f2f2
+}
+
+section article {
+	padding: 2.5em 0;
+}
+
+.fotoBloqueEstilo {
+	width: 100%;
+}
+
+.txtBloque {
+	overflow: hidden;
+	padding: 1em;
+	line-height: 16px;
+}
+
+.icon-mas{
+	float: right;
+	margin: .5em 0 0 0;
+	width: 30px;
+}
+
+.txtForm {
+	font-size: 25px;
+}
+
+.menuEjercicios {
+	padding: 1em 0;
+}
+
+.botonMenu {
+	padding: 0 1em 0 0;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.formulario {
+	border: 1px solid;
+    border-radius: 25px;
+	padding: 3em 2.5em;
+}
+
+footer {
+	background-color: #424242;
+	color: white;
+	font-size: 18px;
+	margin: 4em 0 0 0;
+	position: fixed;
+	z-index: 1;
+	bottom: 0
+}
+
+footer div {
+	padding: .2em 0;
+}
+
+#bloqueAjax2{
+	position: absolute;
+  	z-index: 0;
+}
+@media only screen and (max-width: 880px) {
+
+	#infoLabo{
+    	width: 100%;
+    	display: block;
+    	margin: 0 0 0 .5px;
+  	}
+
+
+  	.formLab{
+    	width: 100%;
+    	display: block;
+    	margin: 0 0 0 .5px;
+  	}
+	
+  	section article .contenedor2 .bloques .bloque1 .bloque1 {
+  		width: 100%;
+  		display: block;
+  		margin: 0;
+  	}
+
+  	.bloque2, .bloque3, .bloque4 {
+  		width: 100%;
+  		display: block;
+  		margin: 0;
+  		margin: 0 0 2em 0;
+  	}
+
+  	#bloqueAjax{
+  		display: block;
+  	}
+
+
+  	#uno {
+  		display: block;
+  		width: 100%;
+  		margin: 0 0 2em 0;
+  	}
+}

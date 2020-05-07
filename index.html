@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
+	<title>Laboratorio SQL</title>
+</head>
+<body>
+<header>
+	<nav>
+		<img class="logo" src="imagen/logo.png">
+		<h2 style="line-height:25px">Laboratorio de Consulta Estructurado</h2>
+	</nav>
+</header>
+
+<section>
+	<article>
+		<div class="contenedor1">
+			<div class="infoLab" id="infoLabo">
+				<h1>Laboratorio SQL</h1>
+				<p class="txtInfoLab">Ingresa al sistema para poder hacer uso del laboratorio SQL</p>
+				<img class="banner" src="imagen/banner.png">
+			</div>
+			<div class="formLab">
+				<form class="formulario">
+					<p class="txtForm">Ingreso de Usuarios</p>
+					<input class="camposTxt form-control" type="text" name="" placeholder="Usuario">
+					<input class="camposTxt form-control" type="password" name="" placeholder="Clave">
+					<input class="btn btn-primary" type="submit" value="Ingresar">
+				</form>
+			</div>
+		</div>
+		<div class="contenedor2">
+			<div class="menuEjercicios">
+				<input class="btn btn-outline-primary" type="submit" value="Ejemplos" onclick="mostrar()">
+				<input class="btn btn-outline-primary" type="submit" value="Ejercicios" onclick="ocultar()">
+			</div>
+			<div class="bloques" id="bloqueAjax">
+				<div class="bloque1" id="uno">
+					<img class="fotoBloqueEstilo" src="imagen/bloque/1.jpg">
+					<p class="txtBloque">
+						Ejemplo de uso de las sentencias de creación de tablas
+						<a href="#"><img class="icon-mas" src="imagen/mas.png"></a>
+					</p>
+					
+				</div>
+				<div class="bloque2">
+					<img class="fotoBloqueEstilo" src="imagen/bloque/2.jpg">
+					<p class="txtBloque">
+						Ejemplo de uso de la sentencia de inserción de datos en la base de datos
+						<a href="#"><img class="icon-mas" src="imagen/mas.png"></a>
+					</p>
+				</div>
+				<div class="bloque3">
+					<img class="fotoBloqueEstilo" src="imagen/bloque/3.jpg">
+					<p class="txtBloque">
+						Ejemplo de uso de las consultas anidadas con la sentencia IN
+						<a href="#"><img class="icon-mas" src="imagen/mas.png"></a>
+					</p>
+				</div>
+				<div class="bloque4">
+					<img class="fotoBloqueEstilo" src="imagen/bloque/4.jpg">
+					<p class="txtBloque">
+						Ejemplo de uso de la sentencia DML en la base de datos MySQL
+						<a href="#"><img class="icon-mas" src="imagen/mas.png"></a>
+					</p>
+				</div>
+			</div>
+
+			<div class="bloques2" id="bloqueAjax2">
+				<div class="bloque1" id="uno">
+					<img class="fotoBloqueEstilo" src="imagen/bloque/5.jpg">
+					<p class="txtBloque">
+						Ejercicios de la Universidad Francisco de Paula Santander
+						<a href="#"><img class="icon-mas" src="imagen/mas.png"></a>
+					</p>
+					
+				</div>
+				<div class="bloque2">
+					<img class="fotoBloqueEstilo" src="imagen/bloque/6.jpg">
+					<p class="txtBloque">
+						Ejercicio del Campeonato Rusia 2018
+						<a href="#"><img class="icon-mas" src="imagen/mas.png"></a>
+					</p>
+				</div>
+				<div class="bloque3">
+					<img class="fotoBloqueEstilo" src="imagen/bloque/7.jpg">
+					<p class="txtBloque">
+						Ejercicio de energia renovable y fuentes luminicas
+						<a href="#"><img class="icon-mas" src="imagen/mas.png"></a>
+					</p>
+				</div>
+				<div class="bloque4">
+					<img class="fotoBloqueEstilo" src="imagen/bloque/9.jpg">
+					<p class="txtBloque">
+						Ejercicio del hotel del hospedaje rual de chinacota
+						<a href="#"><img class="icon-mas" src="imagen/mas.png"></a>
+					</p>
+				</div>
+			</div>	
+		</div>
+	</article>
+</section>
+<footer>
+	<div class="piePage">
+		<p>2019 - todos los derechos reservados</p>
+	</div>
+</footer>
+<script type="text/javascript">
+	function mostrar() {
+		document.getElementById("bloqueAjax").style.display = "flex";
+		document.getElementById("bloqueAjax2").style.display = "none";
+	}
+
+	function ocultar() {
+		document.getElementById("bloqueAjax").style.display = "none";
+		document.getElementById("bloqueAjax2").style.display = "flex";
+	}
+
+	function mostrar_ocultar() {
+		if(bloqueAjax2.style.display == "none") {
+			mostrar();
+		} else {
+			ocultar();
+		}
+	}
+
+</script>
+</body>
+</html>
